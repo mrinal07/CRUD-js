@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>My Customers</h2>
+
+    <div class="row">
+
+      <div class="col">
+        <button onclick="addRow()">
+            Add Row
+        </button>
+
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="Search for names.."
+          title="Type in a name"
+        />
+
+        <p id="demo"></p>
+
+        <!-- <table id="myTable">
+          <tr class="header">
+              <th style="width: 40%">Param Code</th>
+              <th style="width: 40%">Param Value</th>
+              <th style="width: 20%">Status</th>
+          </tr>
+
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Germany</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Berglunds snabbkop</td>
+            <td>Sweden</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>UK</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Koniglich Essen</td>
+            <td>Germany</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Canada</td>
+            <td>Inactive</td>
+          </tr>
+          <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Italy</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>North/South</td>
+            <td>UK</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Paris specialites</td>
+            <td>France</td>
+            <td>Inactive</td>
+          </tr>
+        </table> -->
+      </div>
+
+      <div class="col">
+        <h2>Edit Config Detail</h2>
+        <form id="FORM" action="" onsubmit="return false">
+            <label for="id">ID:</label><br>
+            <input type="text" id="id" name="id" disabled><br>
+
+            <label for="ParamCode">Param Code:</label><br>
+            <input type="text" id="ParamCode" name="ParamCode" ><br>
+
+            <label for="ParamValue">Param Value:</label><br>
+            <input type="text" id="ParamValue" name="ParamValue" ><br><br>
+
+
+            <select name="Status" id="Status">
+              <option value="Active">Active</option>
+              <option value="Inactive">Inactive</option>
+            </select><br><br>
+
+            <label for="Documentation">Documentation:</label><br>
+            <input type="text" id="Documentation" name="Documentation" ><br><br>
+
+
+            <input onclick="addFormDetails()" id="submitBtn" type="submit" value="Submit" disabled>
+            <input onclick="clearForm()" type="reset" value="Cancel">
+          </form> 
+      </div>
+
+     
+
+
+    </div>
+
+    <script src="myJS.js">
+      
+    </script>
+  </body>
+</html>
