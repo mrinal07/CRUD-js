@@ -1,4 +1,4 @@
-# CRUD-js
+# CRDU operations using HTML, CSS, JS.
 
 * Implement this screen with the functionalities listed below
 
